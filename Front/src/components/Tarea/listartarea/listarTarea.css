@@ -1,0 +1,37 @@
+.listar-tareas-container {
+    display: flex;
+}
+
+.tareas-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.tareas-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tareas-table th, .tareas-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.tareas-table th {
+    background-color: #007bff;
+    color: white;
+}
+
+.edit-button, .delete-button {
+    margin-right: 10px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.edit-button:hover, .delete-button:hover {
+    text-decoration: none;
+}

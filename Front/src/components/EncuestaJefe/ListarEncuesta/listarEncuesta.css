@@ -1,0 +1,45 @@
+.listar-encuestas-container {
+    display: flex;
+}
+
+.encuestas-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.encuestas-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.encuestas-table th, .encuestas-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.encuestas-table th {
+    background-color: #007bff;
+    color: white;
+}
+
+.encuestas-table td a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.encuestas-table td a:hover {
+    text-decoration: underline;
+}
+
+.delete-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #dc3545;
+    text-decoration: none;
+}
+
+.delete-button:hover {
+    text-decoration: underline;
+}

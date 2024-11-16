@@ -1,0 +1,37 @@
+.listarusuariocont {
+    display: flex;
+}
+
+.usuariocont {
+    flex: 1;
+    padding: 20px;
+}
+
+.usuariotabla {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.usuariotabla th, .usuariotabla td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.usuariotabla th {
+    background-color: #007bff;
+    color: white;
+}
+
+.botoneditar, .botoneliminar {
+    margin-right: 10px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.botoneditar:hover, .botoneliminar:hover {
+    text-decoration: none;
+}

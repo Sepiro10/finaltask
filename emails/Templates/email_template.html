@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        .email-container {
+            max-width: 600px;
+            margin: 0 auto;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333333;
+        }
+        .header {
+            background-color: #3498db;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px 5px 0 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .header-content {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .header img {
+            width: 40px;
+            height: 40px;
+        }
+        .header h1 {
+            margin: 0;
+        }
+        .content {
+            padding: 20px;
+            background-color: #ffffff;
+            border: 1px solid #dddddd;
+        }
+        .task-title {
+            font-size: 24px;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+        .deadline {
+            background-color: #f8f9fa;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 15px 0;
+            color: #e74c3c;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 12px;
+            color: #666666;
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <div class="header">
+            <div class="header-content">
+                <img src="https://drive.google.com/thumbnail?id=1BBHfkM6fbyEfEU4P9JrCpvXLGnLULBp_" alt="Task Icon">
+                <h1>Nueva Tarea Asignada</h1>
+            </div>
+        </div>
+        <div class="content">
+            <div class="task-title">
+                {{ title }}
+            </div>
+            <p>Se te ha asignado una nueva tarea que requiere tu atención.</p>
+            <div class="deadline">
+                <strong>Fecha de vencimiento:</strong> {{ deadline }}
+            </div>
+            <p>Por favor, revisa los detalles de la tarea en la aplicación.</p>
+        </div>
+        <div class="footer">
+            <p>Este es un correo automático, por favor no responder.</p>
+        </div>
+    </div>
+</body>
+</html>
